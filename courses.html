@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Курси</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        header {
+            background-color: rgb(205, 92, 92);
+            text-align: center;
+            padding: 10px;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+        }
+
+        main {
+            flex-grow: 1;
+            background-color: rgb(255, 192, 203);
+            text-align: center;
+            padding: 20px;
+        }
+
+        .course-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .course-list li {
+            background-color: white;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid rgb(205, 92, 92);
+        }
+
+        footer {
+            background-color: rgb(205, 92, 92);
+            text-align: center;
+            padding: 10px;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#">Головна</a></li>
+                <li><a href="#">Курси</a></li>
+                <li><a href="#">Підтримка</a></li>
+                <li><a href="#">Профіль</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Курси</h1>
+        <ul class="course-list">
+            <li><a href="#">Тема 1</a></li>
+            <li><a href="#">Тема 2</a></li>
+            <li><a href="#">Тема 3</a></li>
+        </ul>
+    </main>
+
+    <footer>
+        <p>Відгуки</p>
+        <p><a href="#">Контакти</a> | <a href="#">Політика</a> | <a href="#">Додаткова інформація</a></p>
+    </footer>
+</body>
+</html>
