@@ -2,6 +2,58 @@
 <html>
 <head>
     <title>Ваша страница</title>
+    <style>
+        body {
+            background-color: rgb(205, 92, 92);
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: rgb(205, 92, 92);
+            text-align: center;
+            padding: 10px;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+        }
+
+        main {
+            flex-grow: 1;
+            background-color: rgb(255, 192, 203);
+            text-align: center;
+            padding: 50px;
+            border: 1px solid rgb(205, 92, 92);
+            
+        }
+
+        .content-box {
+            border: 1px solid rgb(205, 92, 92);
+            background-color: rgb(205, 92, 92);
+            padding: 10px;
+        }
+
+        footer {
+            background-color: rgb(205, 92, 92);
+            text-align: center;
+            color: white;
+            height: 10%;
+        }
+
+    </style>
 </head>
 <body>
     <header>
@@ -15,7 +67,16 @@
         </nav>
     </header>
 
-    <!-- Остальное содержимое вашей страницы здесь -->
+    <main>
+        <div class="content-box">
+            <h1>ХТО МИ?</h1>
+            <p>Привіт! Ти знаходишься на сайті Ilearning! На данному сайті ти зможеш знайти курси з різних мов. В кінці курсу ти гарантовано будеш вже мати певне навички.</p>
+        </div>
+    </main>
 
+    <footer>
+        <p>Відгуки</p>
+        <p><a href="#">Контакти</a> | <a href="#">Політика</a> | <a href="#">Додаткова інформація</a></p>
+    </footer>
 </body>
 </html>
