@@ -52,6 +52,38 @@
             padding: 10px;
             color: white;
         }
+
+        .centered-text {
+            font-size: 18px;
+        }
+
+        .popular-courses {
+            background-color: rgb(255, 192, 203);
+            padding: 20px;
+            text-align: center;
+        }
+
+       .popular-courses-list {
+            display: flex;
+            justify-content: center;
+            overflow: auto;
+            white-space: nowrap;
+        }
+
+        .popular-courses-item {
+            background-color: rgb(205, 92, 92);
+            margin: 10px;
+            padding: 10px;
+        }
+
+        .register-button, .login-button {
+            background-color: rgb(205, 92, 92);
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            margin: 10px;
+        }
     </style>
 </head>
 <body>
@@ -69,13 +101,29 @@
     <main>
         <div class="content-box">
             <h1>ХТО МИ?</h1>
-            <p>Привіт! Ти знаходишься на сайті Ilearning! На данному сайті ти зможеш знайти курси з різних мов. В кінці курсу ти гарантовано будеш вже мати певне навички!</p>
+            <p>Привіт! Ти знаходишься на сайті Ilearning! На данному сайті ти зможеш знайти курси з різних мов. В кінці курсу ти гарантовано будеш вже мати певні навички. Рєєструйся вже зараз!</p>
         </div>
+         <div class="centered-text">
+        <button class="register-button">Зареєструватися</button>
+        <button class="login-button">Увійти</button>
+    </div>
     </main>
+
+     <div class="popular-courses">
+            <h2 style="text-align: center;">Популярні курси</h2>
+        <div class="popular-courses-list">
+            <div class="popular-courses-item">Курс 1</div>
+            <div class="popular-courses-item">Курс 2</div>
+            <div class="popular-courses-item">Курс 3</div>
+            <div class="popular-courses-item">Курс 4</div>
+            <div class="popular-courses-item">Курс 5</div>
+        </div>
+    </div>
 
     <footer>
         <p><a href="#">Відгуки</a>
         <p><a href="#">Контакти</a> | <a href="#">Політика</a> | <a href="#">Додаткова інформація</a></p>
     </footer>
+
 </body>
 </html>
