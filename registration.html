@@ -88,10 +88,10 @@
     <main>
         <h1>Реєстрація</h1>
         <div class="registration-form">
-            <input type="text" placeholder="Нік">
-            <input type="email" placeholder="Пошта">
-            <input type="password" placeholder="Пароль">
-            <button>Зареєструватися</button>
+            <input type="text" id="username" placeholder="Нік">
+            <input type="email" id="email" placeholder="Пошта">
+            <input type="password" id="password" placeholder="Пароль">
+            <button onclick="validateRegistration()">Зареєструватися</button>
         </div>
         <div class="login-prompt">
             <p>Можливо, у вас вже є обліковий запис? <a href="#">Увійти</a></p>
@@ -102,5 +102,18 @@
          <p><a href="#">Відгуки</a>
         <p><a href="#">Контакти</a> | <a href="#">Політика</a> | <a href="#">Додаткова інформація</a></p>
     </footer>
+
+    <script>
+        function validateRegistration() {
+            var username = document.getElementById("username").value;
+            var email = document.getElementById("email").value;
+            var password = document.getElementById("password").value;
+
+            if (username.trim() === "" || email.trim() === "" || password.trim() === "") {
+                alert("Ви ввели некоректні дані. Будь ласка, заповніть всі поля.");
+            } else {
+            }
+        }
+    </script>
 </body>
 </html>
