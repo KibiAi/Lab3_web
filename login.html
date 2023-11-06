@@ -88,12 +88,12 @@
     <main>
         <h1>Логін</h1>
         <div class="login-form">
-            <input type="email" placeholder="Пошта">
-            <input type="password" placeholder="Пароль">
-            <button>Увійти</button>
+            <input type="email" id="email" placeholder="Пошта">
+            <input type="password" id="password" placeholder="Пароль">
+            <button onclick="validateLogin()">Увійти</button>
         </div>
         <div class="register-prompt">
-            <p>Ще не маєте облікового запису? <a href="#">Зареєструватися</a></p>
+            <p>Ще не маєте облікового запису? <a href="registration.html">Зареєструватися</a></p>
         </div>
     </main>
 
@@ -101,5 +101,18 @@
         <p><a href="#">Відгуки</a>
         <p><a href="#">Контакти</a> | <a href="#">Політика</a> | <a href="#">Додаткова інформація</a></p>
     </footer>
+
+    <script>
+        function validateLogin() {
+            var email = document.getElementById("email").value;
+            var password = document.getElementById("password").value;
+
+            if (email.trim() === "" || password.trim() === "") {
+                alert("Ви ввели некоректні дані. Будь ласка, заповніть всі поля.");
+            } else {
+
+            }
+        }
+    </script>
 </body>
 </html>
