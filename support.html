@@ -84,14 +84,35 @@
     <main>
         <h1>Підтримка</h1>
         <div class="support-form">
-            <textarea placeholder="Ваше повідомлення..."></textarea>
-            <button>Відправити</button>
+            <textarea id="message-input" placeholder="Ваше повідомлення..."></textarea>
+            <button onclick="sendMessage()">Відправити</button>
         </div>
+        <div id="success-message" style="display: none; color: green;">Ви відправили повідомлення.</div>
+        <div id="error-message" style="display: none; color: red;">Поле повідомлення не може бути порожнім.</div>
     </main>
 
     <footer>
-         <p><a href="#">Відгуки</a>
+        <p><a href="#">Відгуки</a>
         <p><a href="#">Контакти</a> | <a href="#">Політика</a> | <a href="#">Додаткова інформація</a></p>
     </footer>
+
+    <script>
+        function sendMessage() {
+            // Отримайте текст повідомлення з поля вводу
+            var message = document.getElementById("message-input").value;
+            var successMessage = document.getElementById("success-message");
+            var errorMessage = document.getElementById("error-message");
+
+            if (message.trim() === "") {
+                // Перевірка, чи поле повідомлення порожнє
+                successMessage.style.display = "none"; // Приховуємо повідомлення про успішне відправлення
+                errorMessage.style.display = "block"; // Відображаємо повідомлення про помилку
+            } else {
+                // Якщо поле не порожнє, воно відправляється, і виводиться повідомлення про успішне відправлення
+                successMessage.style.display = "block";
+                errorMessage.style.display = "none"; // Приховуємо повідомлення про помилку
+            }
+        }
+    </script>
 </body>
 </html>
